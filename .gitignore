@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+config.json
+manifest.json
+runs.jsonl
+issues.jsonl
+last_report.txt
