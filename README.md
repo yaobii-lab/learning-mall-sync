@@ -1,12 +1,14 @@
 # Learning Mall Sync
 
+简体中文 · [English](README.en.md)
+
+![Learning Mall Sync：让 AI 定期下载西浦课件，整理到本地或网盘](assets/cover.png)
+
 **让你的 AI Agent 定期自动下载西浦课件，整理到本地或网盘。**
 
 **Let your AI agent automatically download XJTLU course materials on a schedule and organize them locally or in cloud storage.**
 
 把这个 Skill 交给 WorkBuddy、Codex、Muse 等 AI Agent，选好课程、保存位置和同步周期，让它帮你检查 Learning Mall 的更新、下载并整理课件。Agent 需要支持加载 Skill、操作浏览器和读写文件；定期自动同步还需要它支持定时任务。具体接入方式随 Agent 而异。
-
-Give this Skill to an AI agent such as WorkBuddy, Codex, or Muse. Choose your courses, save location, and sync schedule, then let it check Learning Mall for updates and organize your course materials. Your agent needs Skill support, browser control, and file access; scheduled sync also requires task scheduling. Setup varies by agent.
 
 [快速开始](#快速开始) · [登录与定时同步](#登录与定时同步) · [保存到哪里](#保存到哪里) · [配置文档](docs/configuration.md)
 
@@ -38,7 +40,7 @@ LearningMall/
 
 ### 1. 安装 Skill
 
-把仓库链接或下载的技能包交给你的 Agent，请它安装并读取 [SKILL.md](SKILL.md)。支持技能导入的 Agent，也可以在界面里导入技能包。
+把[仓库链接](https://github.com/yaobii-lab/learning-mall-sync)或 [Release 中的技能包](https://github.com/yaobii-lab/learning-mall-sync/releases/latest)交给你的 Agent，请它安装并读取 [SKILL.md](SKILL.md)。支持技能导入的 Agent，也可以在界面里导入技能包。
 
 如果你习惯使用命令行，也可以运行以下命令，选择要安装到的 Agent：
 
