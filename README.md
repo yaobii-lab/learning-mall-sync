@@ -1,37 +1,29 @@
-<div align="center">
-
-<b>简体中文</b> · <a href="README.en.md">English</a>
-
-<img src="assets/cover.png" alt="Learning Mall Sync" width="100%">
-
 # Learning Mall Sync
 
-**让你的 AI Agent 定期自动下载西浦课件，整理到本地或网盘。**
+简体中文 / [English](README.en.md)
 
-Let your AI agent automatically download XJTLU course materials on a schedule and organize them locally or in cloud storage.
+![Learning Mall Sync](assets/cover.png)
 
-[![CI](https://github.com/yaobii-lab/learning-mall-sync/actions/workflows/tests.yml/badge.svg)](https://github.com/yaobii-lab/learning-mall-sync/actions/workflows/tests.yml) · [MIT](LICENSE) · macOS & Windows
+让你的 AI Agent 定期自动下载西浦课件，整理到本地或网盘。
 
-<a href="#quick-start">🚀 快速开始</a> · <a href="#schedule">🗓️ 定时同步</a> · <a href="#storage">📁 保存位置</a> · <a href="https://github.com/yaobii-lab/learning-mall-sync/releases/latest">📦 下载技能包</a>
-
-</div>
+[快速开始](#quick-start) · [定时同步](#schedule) · [保存位置](#storage) · [下载技能包](https://github.com/yaobii-lab/learning-mall-sync/releases/latest)
 
 把这个 Skill 交给 WorkBuddy、Codex、Muse 等 AI Agent，选好课程、保存位置和同步周期，让它帮你检查更新、下载并整理课件。
 
-## 💬 你说一句，Agent 来整理
+## 你说一句，Agent 来整理
 
 > 把我这学期的 Learning Mall 课件同步到 OneDrive，每 2 天检查一次。有新课件或老师替换了文件再告诉我。
 
 第一次，Agent 会带你选课程、连接浏览器、确认保存位置和时间。你在浏览器里完成登录与授权，之后它复用这个浏览器的登录状态，定期下载和整理。
 
-| 🔐 登录一次 | 🗓️ 按时同步 | ☁️ 自选保存位置 |
-| --- | --- | --- |
-| 后续复用浏览器登录状态 | 每天、每 2 天或每周检查 | 本地文件夹或网盘同步目录 |
+- 登录一次：后续复用浏览器登录状态。
+- 按时同步：每天、每 2 天或每周检查。
+- 自选位置：保存到本地文件夹或网盘同步目录。
 
 发现新增与替换，保留旧版；按课程、周节整理，每门课生成可点击的文件索引。有变化再告诉你。
 
 <details>
-<summary>📂 看看整理后的文件夹</summary>
+<summary>看看整理后的文件夹</summary>
 
 文件夹会是这样（示意）：
 
@@ -51,7 +43,7 @@ LearningMall/
 
 <a id="quick-start"></a>
 
-## 🚀 快速开始
+## 快速开始
 
 ### 1. 安装 Skill
 
@@ -74,7 +66,7 @@ npx skills add yaobii-lab/learning-mall-sync -g
 
 > 帮我同步 Learning Mall 的课件。第一次用，请带我选课程、保存位置和同步周期。
 
-Agent 会检查浏览器工具。需要新装时首推 **CUA Driver**，也可以用 Harness 推荐的 **browser-use**，或 Dot / personal agent 已有的浏览器。[查看浏览器接入说明](references/browser-tools.md)。
+Agent 会检查浏览器工具。需要新装时首推 CUA Driver，也可以用 Harness 推荐的 browser-use，或 Dot / personal agent 已有的浏览器。[查看浏览器接入说明](references/browser-tools.md)。
 
 ### 3. 登录、选课，然后开始
 
@@ -84,11 +76,11 @@ Agent 会检查浏览器工具。需要新装时首推 **CUA Driver**，也可�
 
 <a id="schedule"></a>
 
-## 🗓️ 登录与定时同步
+## 登录与定时同步
 
-**首次登录并授权，后续复用登录状态。** 同步会沿用同一个浏览器环境；学校的单点登录仍有效时，可以自动跳转登录。学校要求重新验证时，Agent 会提醒你在浏览器完成登录。
+首次登录并授权，后续复用登录状态。 同步会沿用同一个浏览器环境；学校的单点登录仍有效时，可以自动跳转登录。学校要求重新验证时，Agent 会提醒你在浏览器完成登录。
 
-**周期由你选。** 每天、每 2 天、每周或指定时间都可以。例如：
+周期由你选。 每天、每 2 天、每周或指定时间都可以。例如：
 
 > 改成每周日晚上 8 点同步，有新课件再通知我。
 
@@ -96,7 +88,7 @@ Agent 会检查浏览器工具。需要新装时首推 **CUA Driver**，也可�
 
 <a id="storage"></a>
 
-## 📁 保存到哪里
+## 保存到哪里
 
 | 保存方式 | 你会得到什么 |
 | --- | --- |
@@ -105,7 +97,7 @@ Agent 会检查浏览器工具。需要新装时首推 **CUA Driver**，也可�
 
 网盘同步使用已安装并登录的桌面客户端。Agent 会帮你找到或选择它的本机同步文件夹，并展示完整路径。Dot / personal agent 在远端运行时，也会说明文件保存在那台机器的哪里。
 
-## 💬 常见问题
+## 常见问题
 
 **会下载哪些内容？** 课件文件和可选的作业说明附件。录播、论坛、成绩和同学提交不在同步范围。
 
@@ -113,7 +105,7 @@ Agent 会检查浏览器工具。需要新装时首推 **CUA Driver**，也可�
 
 **同步卡住了怎么看？** Agent 会报告具体课程和原因。`partial` 表示还有未完成项，`blocked` 表示需要处理登录等阻塞；[配置文档](docs/configuration.md) 里有查看配置、同步历史和问题记录的方法。
 
-## 🛠️ 开发与反馈
+## 开发与反馈
 
 <details>
 <summary>运行测试与反馈问题</summary>
@@ -134,7 +126,7 @@ py -3 -m unittest discover -s tests -v
 
 </details>
 
-## 📄 License
+## License
 
 [MIT](LICENSE) · 非西交利物浦大学官方项目。课件版权归各自权利人，仅供本人学习，请勿公开上传课件或登录数据。
 

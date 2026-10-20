@@ -1,35 +1,29 @@
-<div align="center">
-
-<a href="README.md">简体中文</a> · <b>English</b>
-
-<img src="assets/cover.png" alt="Learning Mall Sync" width="100%">
-
 # Learning Mall Sync
 
-**Let your AI agent automatically download XJTLU course materials on a schedule and organize them locally or in cloud storage.**
+[简体中文](README.md) / English
 
-[![CI](https://github.com/yaobii-lab/learning-mall-sync/actions/workflows/tests.yml/badge.svg)](https://github.com/yaobii-lab/learning-mall-sync/actions/workflows/tests.yml) · [MIT](LICENSE) · macOS & Windows
+![Learning Mall Sync](assets/cover.png)
 
-<a href="#quick-start">🚀 Quick start</a> · <a href="#schedule">🗓️ Scheduled sync</a> · <a href="#storage">📁 Save locations</a> · <a href="https://github.com/yaobii-lab/learning-mall-sync/releases/latest">📦 Download Skill</a>
+Let your AI agent automatically download XJTLU course materials on a schedule and organize them locally or in cloud storage.
 
-</div>
+[Quick start](#quick-start) · [Scheduled sync](#schedule) · [Save locations](#storage) · [Download Skill](https://github.com/yaobii-lab/learning-mall-sync/releases/latest)
 
 Give this Skill to WorkBuddy, Codex, Muse, or another capable AI agent. Choose your courses, save location, and sync schedule, then let it handle the updates.
 
-## 💬 Just ask your agent
+## Just ask your agent
 
 > Sync this semester's Learning Mall course materials to OneDrive. Check every two days, and notify me when new materials appear or a lecturer replaces a file.
 
 On the first run, your agent guides you through choosing courses, connecting a browser, and confirming where and when to save files. You sign in and authorize browser access yourself. Later runs reuse that browser's login session.
 
-| 🔐 Sign in once | 🗓️ Sync on your schedule | ☁️ Choose where files go |
-| --- | --- | --- |
-| Reuse your browser session | Daily, every two days, or weekly | Local folders or cloud sync folders |
+- Sign in once: reuse your browser session on later runs.
+- Set a schedule: check daily, every two days, or weekly.
+- Choose a destination: a local folder or a cloud sync folder.
 
 New and replaced files are detected, previous versions are kept, and each course gets a clickable index.
 
 <details>
-<summary>📂 Preview the folder structure</summary>
+<summary>Preview the folder structure</summary>
 
 Your folders will look like this (example):
 
@@ -51,7 +45,7 @@ LearningMall/
 
 <a id="quick-start"></a>
 
-## 🚀 Quick start
+## Quick start
 
 ### 1. Install the Skill
 
@@ -74,7 +68,7 @@ For other installation options, see [manual installation (Chinese)](docs/configu
 
 > Help me sync my Learning Mall course materials. This is my first time: guide me through choosing courses, a save location, and a sync schedule.
 
-Your agent checks its browser tools first. If a new tool is needed, **CUA Driver** is the first recommendation; the host's recommended **browser-use** integration or an existing Dot / personal agent browser can also work. See the [browser setup notes (Chinese)](references/browser-tools.md).
+Your agent checks its browser tools first. If a new tool is needed, CUA Driver is the first recommendation; the host's recommended browser-use integration or an existing Dot / personal agent browser can also work. See the [browser setup notes (Chinese)](references/browser-tools.md).
 
 ### 3. Sign in, choose courses, and start
 
@@ -84,11 +78,11 @@ Requires Python 3.10+ and an agent that supports Skills, can run commands, read 
 
 <a id="schedule"></a>
 
-## 🗓️ Login and scheduled sync
+## Login and scheduled sync
 
-**Sign in and authorize once, then reuse the session.** Sync uses the same browser environment. If the university's single sign-on session is still valid, sign-in can resume automatically. When the university requires verification again, your agent asks you to complete it in the browser.
+Sign in and authorize once, then reuse the session. Sync uses the same browser environment. If the university's single sign-on session is still valid, sign-in can resume automatically. When the university requires verification again, your agent asks you to complete it in the browser.
 
-**Choose your own schedule:** daily, every two days, weekly, or another supported time. For example:
+Choose your own schedule: daily, every two days, weekly, or another supported time. For example:
 
 > Sync every Sunday at 8 PM. Only notify me when course materials change.
 
@@ -96,7 +90,7 @@ Your agent host manages scheduling and needs access to the browser and destinati
 
 <a id="storage"></a>
 
-## 📁 Where files go
+## Where files go
 
 | Destination | What happens |
 | --- | --- |
@@ -105,7 +99,7 @@ Your agent host manages scheduling and needs access to the browser and destinati
 
 Cloud sync requires the provider's desktop client to be installed and signed in. The agent helps find or select its local sync folder and shows the full path. If your Dot / personal agent runs remotely, it explains where files are saved on that machine.
 
-## 💬 FAQ
+## FAQ
 
 **What gets downloaded?** Course files and, optionally, attachments in assignment instructions. Recordings, forums, grades, and student submissions are excluded.
 
@@ -113,7 +107,7 @@ Cloud sync requires the provider's desktop client to be installed and signed in.
 
 **What if sync gets stuck?** Your agent reports the affected course and cause. `partial` means work remains; `blocked` means something such as sign-in needs attention. The [configuration guide (Chinese)](docs/configuration.md) explains how to inspect settings, sync history, and recorded issues.
 
-## 🛠️ Development and feedback
+## Development and feedback
 
 <details>
 <summary>Run the tests and report an issue</summary>
@@ -134,7 +128,7 @@ Validate browser sign-in and a real download with one file in your chosen agent 
 
 </details>
 
-## 📄 License
+## License
 
 [MIT](LICENSE). An unofficial XJTLU project. Course materials remain the property of their respective rights holders and are for your personal study. Do not publicly upload course materials or login data.
 
