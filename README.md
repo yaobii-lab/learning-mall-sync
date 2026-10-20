@@ -1,12 +1,10 @@
-# Learning Mall Sync
-
-简体中文 / [English](README.en.md)
+<p align="center">简体中文 / <a href="README.en.md">English</a></p>
 
 ![Learning Mall Sync](assets/cover.png)
 
-让你的 AI Agent 定期自动下载西浦课件，整理到本地或网盘。
+<p align="center">让你的 AI Agent 定期自动下载西浦课件，整理到本地或网盘。</p>
 
-[快速开始](#quick-start) · [定时同步](#schedule) · [保存位置](#storage) · [下载技能包](https://github.com/yaobii-lab/learning-mall-sync/releases/latest)
+<p align="center"><a href="#quick-start">快速开始</a> · <a href="#schedule">定时同步</a> · <a href="#storage">保存位置</a> · <a href="https://github.com/yaobii-lab/learning-mall-sync/releases/latest">下载技能包</a></p>
 
 把这个 Skill 交给 WorkBuddy、Codex、Muse 等 AI Agent，选好课程、保存位置和同步周期，让它帮你检查更新、下载并整理课件。
 
@@ -78,9 +76,9 @@ Agent 会检查浏览器工具。需要新装时首推 CUA Driver，也可以用
 
 ## 登录与定时同步
 
-首次登录并授权，后续复用登录状态。 同步会沿用同一个浏览器环境；学校的单点登录仍有效时，可以自动跳转登录。学校要求重新验证时，Agent 会提醒你在浏览器完成登录。
+首次登录并授权，后续复用登录状态。同步会沿用同一个浏览器环境；学校的单点登录仍有效时，可以自动跳转登录。学校要求重新验证时，Agent 会提醒你在浏览器完成登录。
 
-周期由你选。 每天、每 2 天、每周或指定时间都可以。例如：
+周期由你选。每天、每 2 天、每周或指定时间都可以。例如：
 
 > 改成每周日晚上 8 点同步，有新课件再通知我。
 

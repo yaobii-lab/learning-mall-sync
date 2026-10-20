@@ -1,12 +1,10 @@
-# Learning Mall Sync
-
-[简体中文](README.md) / English
+<p align="center"><a href="README.md">简体中文</a> / English</p>
 
 ![Learning Mall Sync](assets/cover.png)
 
-Let your AI agent automatically download XJTLU course materials on a schedule and organize them locally or in cloud storage.
+<p align="center">Let your AI agent automatically download XJTLU course materials on a schedule and organize them locally or in cloud storage.</p>
 
-[Quick start](#quick-start) · [Scheduled sync](#schedule) · [Save locations](#storage) · [Download Skill](https://github.com/yaobii-lab/learning-mall-sync/releases/latest)
+<p align="center"><a href="#quick-start">Quick start</a> · <a href="#schedule">Scheduled sync</a> · <a href="#storage">Save locations</a> · <a href="https://github.com/yaobii-lab/learning-mall-sync/releases/latest">Download Skill</a></p>
 
 Give this Skill to WorkBuddy, Codex, Muse, or another capable AI agent. Choose your courses, save location, and sync schedule, then let it handle the updates.
 
