@@ -4,6 +4,8 @@
 
 ![Learning Mall Sync：让 AI 定期下载西浦课件，整理到本地或网盘](assets/cover.png)
 
+封面中的页面来自 [Learning Mall 公开首页](https://www.learningmall.cn/en/)，页面与标识版权归西交利物浦大学所有，本项目非官方项目。
+
 **让你的 AI Agent 定期自动下载西浦课件，整理到本地或网盘。**
 
 **Let your AI agent automatically download XJTLU course materials on a schedule and organize them locally or in cloud storage.**

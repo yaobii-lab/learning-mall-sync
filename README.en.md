@@ -4,6 +4,8 @@
 
 ![Learning Mall Sync — let your AI agent organize your course materials](assets/cover.png)
 
+The cover incorporates the [public Learning Mall homepage](https://www.learningmall.cn/en/). The page and university marks belong to XJTLU; this project is unofficial.
+
 **Let your AI agent automatically download XJTLU course materials on a schedule and organize them locally or in cloud storage.**
 
 Give this Skill to an AI agent such as WorkBuddy, Codex, or Muse. Choose your courses, save location, and sync schedule, then let it check Learning Mall for updates and organize your course materials. Your agent needs Skill support, browser control, and file access; scheduled sync also requires task scheduling. Setup varies by agent.
