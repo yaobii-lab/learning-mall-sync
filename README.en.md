@@ -4,11 +4,9 @@
 
 ![Learning Mall Sync — let your AI agent organize your course materials](assets/cover.png)
 
-The cover incorporates the [public Learning Mall homepage](https://www.learningmall.cn/en/). The page and university marks belong to XJTLU; this project is unofficial.
-
 **Let your AI agent automatically download XJTLU course materials on a schedule and organize them locally or in cloud storage.**
 
-Give this Skill to an AI agent such as WorkBuddy, Codex, or Muse. Choose your courses, save location, and sync schedule, then let it check Learning Mall for updates and organize your course materials. Your agent needs Skill support, browser control, and file access; scheduled sync also requires task scheduling. Setup varies by agent.
+Give this Skill to an AI agent such as WorkBuddy, Codex, or Muse. Choose your courses, save location, and sync schedule, then let it check Learning Mall for updates and organize your course materials.
 
 [Quick start](#quick-start) · [Login and scheduled sync](#login-and-scheduled-sync) · [Where files go](#where-files-go) · [Configuration guide (Chinese)](docs/configuration.md)
 
@@ -50,7 +48,7 @@ If you prefer the command line, run this and choose your agent:
 npx skills add yaobii-lab/learning-mall-sync -g
 ```
 
-You can also [install manually (Chinese)](docs/configuration.md#手动安装), keeping `SKILL.md`, `scripts/`, and `references/` together. A Dot / personal agent with file and command access can read the Skill directly.
+For other installation options, see [manual installation (Chinese)](docs/configuration.md#手动安装).
 
 ### 2. Tell your agent what you need
 
@@ -62,7 +60,7 @@ Your agent checks its browser tools first. If a new tool is needed, **CUA Driver
 
 Sign in to [Learning Mall Core](https://core.xjtlu.edu.cn/) in your browser and authorize your agent to use it. The agent lists your courses and helps you choose a save location, whether to include assignment instruction attachments, a sync schedule, and notifications. It shows the pending download count and each course's full destination path before archiving files.
 
-Requires Python 3.10+ and an agent that can run commands, read and write files, and operate a browser. The Python script uses only the standard library.
+Requires Python 3.10+ and an agent that supports Skills, can run commands, read and write files, and operate a browser. The Python script uses only the standard library.
 
 ## Login and scheduled sync
 
@@ -81,7 +79,7 @@ Your agent host manages scheduling and needs access to the browser and destinati
 | A folder on your computer | Defaults to `LearningMall` under your user's Documents folder; you can choose another folder or drive |
 | Google Drive, OneDrive, iCloud Drive, or Dropbox | Files are saved in the desktop client's local sync folder, then uploaded by that client for access on other devices |
 
-Cloud sync requires the provider's desktop client to be installed and signed in. The agent helps find or select its local sync folder and shows the full path. This Skill does not call cloud storage APIs. If your Dot / personal agent runs remotely, it explains where files are saved on that machine.
+Cloud sync requires the provider's desktop client to be installed and signed in. The agent helps find or select its local sync folder and shows the full path. If your Dot / personal agent runs remotely, it explains where files are saved on that machine.
 
 ## FAQ
 
@@ -89,7 +87,7 @@ Cloud sync requires the provider's desktop client to be installed and signed in.
 
 **Does every run download everything again?** Files with revision identifiers are skipped when the local file is present and the revision is unchanged. Assignment attachments and some direct downloads must be downloaded again to compare their contents; identical content is not saved twice.
 
-**What if sync gets stuck?** Your agent reports the affected course and cause. `partial` means work remains; `blocked` means something such as sign-in needs attention. The [configuration guide (Chinese)](docs/configuration.md) explains how to inspect settings, sync history, and recorded issues. The agent responds in your language even though the Skill instructions are written in Chinese.
+**What if sync gets stuck?** Your agent reports the affected course and cause. `partial` means work remains; `blocked` means something such as sign-in needs attention. The [configuration guide (Chinese)](docs/configuration.md) explains how to inspect settings, sync history, and recorded issues.
 
 ## Development and feedback
 
@@ -109,4 +107,6 @@ Validate browser sign-in and a real download with one file in your chosen agent 
 
 ## License
 
-[MIT](LICENSE). This is an unofficial project and is not affiliated with Xi'an Jiaotong-Liverpool University. Course materials remain the property of their respective rights holders and are for your personal study. Do not publicly upload course materials or login data.
+[MIT](LICENSE). An unofficial XJTLU project. Course materials remain the property of their respective rights holders and are for your personal study. Do not publicly upload course materials or login data.
+
+The cover incorporates the [public Learning Mall homepage](https://www.learningmall.cn/en/). The page and university marks belong to XJTLU.

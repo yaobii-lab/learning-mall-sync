@@ -4,13 +4,11 @@
 
 ![Learning Mall Sync：让 AI 定期下载西浦课件，整理到本地或网盘](assets/cover.png)
 
-封面中的页面来自 [Learning Mall 公开首页](https://www.learningmall.cn/en/)，页面与标识版权归西交利物浦大学所有，本项目非官方项目。
-
 **让你的 AI Agent 定期自动下载西浦课件，整理到本地或网盘。**
 
 **Let your AI agent automatically download XJTLU course materials on a schedule and organize them locally or in cloud storage.**
 
-把这个 Skill 交给 WorkBuddy、Codex、Muse 等 AI Agent，选好课程、保存位置和同步周期，让它帮你检查 Learning Mall 的更新、下载并整理课件。Agent 需要支持加载 Skill、操作浏览器和读写文件；定期自动同步还需要它支持定时任务。具体接入方式随 Agent 而异。
+把这个 Skill 交给 WorkBuddy、Codex、Muse 等 AI Agent，选好课程、保存位置和同步周期，让它帮你检查 Learning Mall 的更新、下载并整理课件。
 
 [快速开始](#快速开始) · [登录与定时同步](#登录与定时同步) · [保存到哪里](#保存到哪里) · [配置文档](docs/configuration.md)
 
@@ -50,7 +48,7 @@ LearningMall/
 npx skills add yaobii-lab/learning-mall-sync -g
 ```
 
-也可以[手动安装](docs/configuration.md#手动安装)，或把仓库交给能读文件、运行命令的 Dot / personal agent，让它先读 [SKILL.md](SKILL.md)。
+其他安装方式见[手动安装](docs/configuration.md#手动安装)。
 
 ### 2. 把任务交给 Agent
 
@@ -62,7 +60,7 @@ Agent 会检查浏览器工具。需要新装时首推 **CUA Driver**，也可�
 
 你在浏览器里登录 [Learning Mall Core](https://core.xjtlu.edu.cn/)，授权 Agent 使用这个浏览器。它会列出课程，引导你选择保存位置、作业说明附件、同步周期和通知方式，展示待下载数量与每门课的完整保存路径，再开始归档。
 
-需要 Python 3.10+，以及能运行命令、读写文件和操作浏览器的 Agent。Python 脚本只用标准库。
+需要 Python 3.10+，以及支持 Skill、运行命令、读写文件和操作浏览器的 Agent。Python 脚本只用标准库。
 
 ## 登录与定时同步
 
@@ -110,3 +108,5 @@ py -3 -m unittest discover -s tests -v
 ## License
 
 [MIT](LICENSE) · 非西交利物浦大学官方项目。课件版权归各自权利人，仅供本人学习，请勿公开上传课件或登录数据。
+
+封面页面来自 [Learning Mall 公开首页](https://www.learningmall.cn/en/)，页面与标识版权归西交利物浦大学所有。
